@@ -1,0 +1,62 @@
+{
+  "claude_hooks": {
+    "SessionStart": [
+      {
+        "matcher": null,
+        "type": [
+          "command"
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "type": [
+          "command"
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": null,
+        "type": [
+          "command"
+        ]
+      }
+    ]
+  },
+  "codex_hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "type": [
+          "command"
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": null,
+        "type": [
+          "command"
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": null,
+        "type": [
+          "command"
+        ]
+      }
+    ]
+  },
+  "codex_mcp_servers": [
+    "chrome-devtools",
+    "node_repl",
+    "playwright"
+  ],
+  "claude_environment_variable_names": [
+    "MCP_TIMEOUT"
+  ]
+}
